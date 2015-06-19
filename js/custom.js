@@ -166,52 +166,6 @@
 	
 	
 	/*----------------------------------------------------*/
-	/*	Current Menu Item
-	/*----------------------------------------------------*/
-	
-	$(document).ready(function() {
-		
-		//Bootstraping variable
-		headerWrapper		= parseInt($('#navigation-menu').height());
-		offsetTolerance	= 300;
-		
-		//Detecting user's scroll
-		$(window).scroll(function() {
-		
-			//Check scroll position
-			scrollPosition	= parseInt($(this).scrollTop());
-			
-			//Move trough each menu and check its position with scroll position then add selected-nav class
-			$('.navbar-nav > li > a').each(function() {
-
-				thisHref				= $(this).attr('href');
-				thisTruePosition	= parseInt($(thisHref).offset().top);
-				thisPosition 		= thisTruePosition - headerWrapper - offsetTolerance;
-				
-				if(scrollPosition >= thisPosition) {
-					
-					$('.selected-nav').removeClass('selected-nav');
-					$('.navbar-nav > li > a[href='+ thisHref +']').addClass('selected-nav');
-					
-				}
-			});
-			
-			
-			//If we're at the bottom of the page, move pointer to the last section
-			bottomPage	= parseInt($(document).height()) - parseInt($(window).height());
-			
-			if(scrollPosition == bottomPage || scrollPosition >= bottomPage) {
-			
-				$('.selected-nav').removeClass('selected-nav');
-				$('navbar-nav > li > a:last').addClass('selected-nav');
-			}
-		});
-		
-	});
-	
-	
-	
-	/*----------------------------------------------------*/
 	/*	Animated Scroll To Anchor
 	/*----------------------------------------------------*/
 	/**
