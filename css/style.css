@@ -14,7 +14,7 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
-/*   00 - Bootstrap Overrides      */
+/*   00 - Bootstrap Amendments     */
 /*   01 - General & Basic Styles   */
 /*   02 - Header & Navigation      */
 /*   03 - Intro      			   */
@@ -40,7 +40,7 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
 /*   23 - Contact Form Response    */
 
 /* ==========================================================================
-   00. BOOTSTRAP OVERRIDES
+   00. BOOTSTRAP AMENDMENTS
    ========================================================================== */
 
 .row-eq-height {
@@ -49,6 +49,26 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
   display: -ms-flexbox;
   display:         flex;
 }
+
+.row-eq-height > .detailbox {
+	/* this class creates a fixed-height, responsive layout */
+	display:flex;
+	flex:1;
+	box-sizing: border-box;
+	align-items: flex-end;	
+	justify-content: center;
+
+	/* enforce no more than 3 per row */
+	min-width: 33%;
+	min-width: 300px;
+	min-height: 320px;
+
+	/* TODO set breakpoints to remove borders below certain sizes */
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef; 
+
+}
+
 
 /* ==========================================================================
    01. GENERAL & BASIC STYLES
@@ -67,35 +87,21 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
 }
 
 /*------------------------------------------*/
-/*	 Preload Animation 
-/*    TODO  DELETE							*/
+/*	 Background Colors
 /*------------------------------------------*/
 
-.animationload {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #262626; 
-	z-index: 999999; 
-}
-.loader {
-	position: absolute;
-	top: 50%; 
-	left: 50%; 
-	margin: -100px 0 0 -100px;
-	width: 200px;
-	height: 200px;
-	background-image: url(../img/icons/loader.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 70px 70px;
+.background-white {
+	background: white;
 }
 
+.background-grey {
+	background: #efefef;
+}
 
-
-
+.background-dark {
+	color: white;
+	background: #0f0f0f;
+}
        
 /*------------------------------------------*/
 /*	 Headers
@@ -107,6 +113,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 1px;
+}
+
+p, li, a, span {
+	letter-spacing: .5px;
+	font-size: 1.1em;
 }
 
 /*------------------------------------------*/
@@ -172,7 +183,6 @@ a:focus {
 .btn-theme:hover {
 	background-color: transparent;
 	color: #FF3C5C;
-	border: 2px solid #FF3C5C;
 }
 
 /*------------------------------------------*/
@@ -339,12 +349,16 @@ a:focus {
 .intro_head {height: 790px;}
 
 #intro h2 {	
-	font-size: 75px;
-	line-height: 85px;
+	font-size: 3em;
+	line-height: 1.1em;
+	font-weight: 900;
 	text-transform: uppercase;
 	padding-top: 280px;
 	margin-bottom: 15px;
-	letter-spacing: 1px;
+}
+
+#intro h4 {
+	font-weight: normal;
 }
 
 /*------------------------------------------*/
@@ -399,13 +413,20 @@ a:focus {
 
 
 /* ==========================================================================
-   04. ABOUT
+   BEAUTIFUL INTERFACES
    ========================================================================== */
 
-#about {
-	padding-top: 80px;
-	padding-bottom: 80px;
-} 
+/* TODO: pre-load the animated gifs */
+
+.content-animations 			{ background: url('../img/features/feature_animations_static.png');background-size: cover; background-repeat: no-repeat;}
+.content-animations:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
+
+.content-interactions 			{ background: url('../img/features/feature_interactions_static.png');background-size: cover; background-repeat: no-repeat;}
+.content-interactions:hover		{ background: url('../img/features/feature_interactions.gif');background-size: cover; background-repeat: no-repeat;}
+
+
+
+
 
 /*------------------------------------------*/
 /*	TABS HOLDER IMAGE
@@ -1414,37 +1435,6 @@ a:focus {
 	background-color: #444;
 }
 
-
-   
-/* ==========================================================================
-   14. CLIENTS
-   ========================================================================== */
- 
-#clients {
-	padding-top: 80px;
-	padding-bottom: 150px;
-	position: relative;
-}	
-
-/*------------------------------------------*/
-/*	 CLIENTS CAROUSEL NAVIGATION
-/*------------------------------------------*/
-
-.customNavigation {
-	display: inline-block;
-	position: absolute;
-	bottom: 80px;
-	right: 49%;
-}
-
-.customNavigation .btn {
-	padding: 4px 10px;
-}
-
-.customNavigation i {
-	font-size: 20px;
-	color: #fff;
-}
 
 
 
