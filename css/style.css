@@ -167,7 +167,7 @@ a:focus {
 /*------------------------------------------*/
 
 .btn-theme {
-	background-color: #FF3C5C;
+	background-color: #ffc400;
 	color: #333;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -182,7 +182,7 @@ a:focus {
 
 .btn-theme:hover {
 	background-color: transparent;
-	color: #FF3C5C;
+	color: #ffc400;
 }
 
 /*------------------------------------------*/
@@ -254,7 +254,7 @@ a:focus {
 }
 
 .navbar-fixed-top { 
-	background-color: rgba(30, 30, 30, 0.45);
+	
 	border-bottom: none;
 }
 
@@ -282,8 +282,7 @@ a:focus {
 }
 
 .scroll-fixed-navbar.navbar-fixed-top { 
-	background-color: #262626;
-	border-bottom: 1px solid #222;
+	background-color: rgba(30,30,30,.75);
 }
 
 /*------------------------------------------*/
@@ -292,7 +291,7 @@ a:focus {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a.selected-nav {
-	color: #FF3C5C;
+	color: #ffc400;
 	background-color: transparent;
 }
 
@@ -380,8 +379,8 @@ a:focus {
 /*	 Rotator Controls
 /*------------------------------------------*/
 
-.flex-control-paging li a:hover { background: #FF3C5C; border: 2px solid #FF3C5C; }
-.flex-control-paging li a.flex-active { background: #FF3C5C; border: 2px solid #FF3C5C; cursor: default; }
+.flex-control-paging li a:hover { background: #ffc400; border: 2px solid #ffc400; }
+.flex-control-paging li a.flex-active { background: #ffc400; border: 2px solid #ffc400; cursor: default; }
 
 /*------------------------------------------*/
 /*	 Video Background
@@ -416,7 +415,7 @@ a:focus {
    BEAUTIFUL INTERFACES
    ========================================================================== */
 
-/* TODO: pre-load the animated gifs */
+/* TODO: pre-load the animated gifs and create rest of this section*/
 
 .content-animations 			{ background: url('../img/features/feature_animations_static.png');background-size: cover; background-repeat: no-repeat;}
 .content-animations:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
@@ -427,6 +426,14 @@ a:focus {
 
 
 
+/* ==========================================================================
+   04. ABOUT
+   ========================================================================== */
+
+#about {
+	padding-top: 80px;
+	padding-bottom: 80px;
+} 
 
 /*------------------------------------------*/
 /*	TABS HOLDER IMAGE
@@ -466,13 +473,13 @@ a:focus {
 .nav-tabs > li.active > a, 
 .nav-tabs > li.active > a:hover, 
 .nav-tabs > li.active > a:focus {
-	color: #FF3C5C;
+	color: #ffc400;
 	border: none;
 	padding: 0;
 }
 
 .nav-tabs > li > a:hover {
-	color: #FF3C5C;
+	color: #ffc400;
 	border: none;
 }
 
@@ -561,7 +568,7 @@ a:focus {
 }
 
 .panel-title > a:hover {
-    color: #FF3C5C;
+    color: #ffc400;
 }
 
 /*------------------------------------------*/
@@ -569,7 +576,7 @@ a:focus {
 /*------------------------------------------*/
 
 .panel-title i {
-	color: #FF3C5C;
+	color: #ffc400;
 	font-size: 28px;
 	margin-right: 10px;
 }
@@ -628,7 +635,7 @@ a:focus {
     content: "";
     height: 2px;
     width: 100px;
-	background: #FF3C5C;
+	background: #ffc400;
     margin: 15px auto;
     position: relative;
 }
@@ -774,7 +781,7 @@ a:focus {
 }
 
 .icon-box i {
-	color: #FF3C5C;
+	color: #ffc400;
     font-size: 60px;
 	margin-top: 10px;
 }
@@ -840,7 +847,7 @@ a:focus {
 }
 
 .timeline-year span {
-    background-color: #FF3C5C;
+    background-color: #ffc400;
     color: #333;
 	font-size: 20px;
 	font-family: 'Lato', sans-serif;
@@ -930,8 +937,8 @@ a:focus {
 }
 
 .timeline-item:hover.timeline-item:before {
-	background-color: #FF3C5C;
-	border-color: #FF3C5C;
+	background-color: #ffc400;
+	border-color: #ffc400;
 }
 
 .timeline-item:hover .timeline-item-content.pull-right:before {
@@ -1062,7 +1069,7 @@ a:focus {
 
 #gallery-filter .btn-group > .btn:hover {
 	color: #fff;
-	background-color: #FF3C5C;
+	background-color: #ffc400;
 }
 
 /*------------------------------------------*/
@@ -1072,7 +1079,7 @@ a:focus {
 #gallery-filter .btn-group > .btn.active,
 #gallery-filter .btn-group > .btn.focus {
 	color: #222;
-	background-color: #FF3C5C;
+	background-color: #ffc400;
 	box-shadow: 0 0 0 0;
 	cursor: default;
 }
@@ -1226,7 +1233,7 @@ a:focus {
 
 .team-img-meta h6 {
 	font-size: 14px;
-	color: #FF3C5C;
+	color: #ffc400;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-bottom: 10px;
@@ -1404,7 +1411,7 @@ a:focus {
 /*------------------------------------------*/
 
 .pricing-table.highlight  {
-	background-color: #FF3C5C;
+	background-color: #ffc400;
 	border-color: #d9a701;
 }
 
@@ -1462,7 +1469,7 @@ a:focus {
 }
 
 #testimonials .clients-counter {
-	color:  #FF3C5C;
+	color:  #ffc400;
 	font-size: 30px;
 	font-weight: 700;
 }
@@ -1593,7 +1600,7 @@ a:focus {
 }
 
 .blog-post-info a {
-	color: #FF3C5C;
+	color: #ffc400;
 }
 
 /*------------------------------------------*/
@@ -1706,7 +1713,7 @@ a:focus {
 /*------------------------------------------*/ 
 
 .contact-info .fa {
-    color: #FF3C5C;
+    color: #ffc400;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 10px;
@@ -1731,12 +1738,12 @@ a:focus {
 }
 
 .contact-info a {
-	color: #FF3C5C;
+	color: #ffc400;
 	font-weight: 700;
 }
 
 .contact-info a:hover {
-  color: #FF3C5C;
+  color: #ffc400;
 }
 
 
@@ -1961,8 +1968,8 @@ a:focus {
 
 #newsletter form input[type="submit"] {
 	width: 25%;
-	background-color: #FF3C5C;
-	border: 1px solid #FF3C5C;
+	background-color: #ffc400;
+	border: 1px solid #ffc400;
 	color: #fff;
 	font-size: 16px;
     font-weight: 900;
@@ -1990,7 +1997,7 @@ a:focus {
 }
 
 #footer_copyright p span {
-	color: #FF3C5C;
+	color: #ffc400;
 	font-size: 15px;
 	font-weight: 800;
 }
@@ -2126,7 +2133,7 @@ nav a#pull {
 }
 
 #form_response .btn-theme {
-	background-color: #FF3C5C;
+	background-color: #ffc400;
 	color: #333;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -2140,7 +2147,7 @@ nav a#pull {
 }
 
 #form_response .btn-theme:hover {
-	background-color: #FF3C5C;
+	background-color: #ffc400;
 	color: #fff;
 }
 
