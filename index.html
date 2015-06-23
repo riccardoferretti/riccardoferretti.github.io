@@ -65,7 +65,7 @@
 						</button>
 						
 						<!-- Logo Image -->
-						<a class="navbar-brand" href="#"><img src="img/logo_sample.png" alt="logo" role="banner"></a>
+						<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" style="height: 40px;" role="banner"></a>
 						
 					</div>	<!-- End Navigation Bar -->
 					
@@ -111,8 +111,8 @@
 									<p>Unity is a flexible and powerful development platform for creating multiplatform 3D and 2D games and interactive experiences. It's a complete ecosystem for anyone who aims to build a business on creating high-end content and connecting to their most loyal and enthusiastic players and customers.</p>																		
 									<!-- INTRO BUTTONS -->
 									<div class="intro_buttons">
-										<a class="btn btn-theme" href="#">Find out more</a>
-										<a class="btn btn-theme btn-secondary" href="#">Get Started</a>
+										<a class="btn btn-theme btn-large btn-primary" href="#">Find out more</a>
+										<a class="btn btn-theme btn-large btn-secondary" href="#">Get Started</a>
 									</div>			
 								</div>
 							</div>										
@@ -158,8 +158,8 @@
 					- once it looks and works ok, we need two more versions: one with white background and content, one with grey.
 
 			============================================= -->
-			<section id="interfaces">
-				<div class="container-fluid" style="background: #1f1f1f;color:white;"> <!-- fluid for full-width -->
+			<section id="interfaces" class="background-dark">
+				<div class="container-fluid" > <!-- fluid for full-width -->
 					<div class="row">
 						<div class="col-xs-12 col-lg-4" style="align-items: center;display:flex; min-height: 500px;">
 							<div style="padding:2px 100px 20px;">
@@ -210,15 +210,14 @@
 				<div class="container-fluid"> <!-- fluid for full-width -->
 					<div class="row">
 						<div class="col-sm-7" style="align-items: center;display:flex; min-height: 500px;justify-content: center;">
-							<img src="img/workflow/illustration@2x.png" style="width: 700px; height: 438px;" alt="random.jpg">
-							
+							<img src="img/workflow/illustration@2x.jpg" style="width: 700px;" alt="From idea to app store in a few simple steps">
 						</div>
 
 
 						<!-- end  big (8) column -->
 						<div class="col-sm-4 titlebar" style="align-items: center;display:flex; min-height: 500px;">
 							<div style="">
-								<h2 style="text-transform:uppercase;">Move fast <br>and build things</h2>
+								<h2><span class="text-light">Move fast </span> and build things</h2>
 								<p>Go from prototype to real product 10x faster. Draw the interface, drag and drop data connections,  add custom Superpowers™ for advanced capabilities, and easily integrate with common APIs and back-ends.</p>
 								<p>When you’re finished, get your project into the app store, or add the interface to an Xcode project.</p>
 							</div>
@@ -231,9 +230,41 @@
 				</div>
 			</section>
 
+			<!-- BENEFIT INNOVATE
+			============================================= -->
+			<section id="innovate">
+				<div class="container-fluid"> <!-- fluid for full-width -->
+					<div class="row">
+						
+						<div class="col-sm-1"></div>
+						<div class="col-sm-4 titlebar" style="align-items: center;display:flex; min-height: 500px;">
+							<div style="">
+								<h2>Build the interfaces of the future</h2>
+								<p>Go from prototype to real product 10x faster. Draw the interface, drag and drop data connections,  add custom Superpowers™ for advanced capabilities, and easily integrate with common APIs and back-ends.</p>
+								<p>When you’re finished, get your project into the app store, or add the interface to an Xcode project.</p>
+							</div>
+						</div>
+
+						<div class="col-sm-7" style="align-items: center;display:flex; min-height: 500px;justify-content: center;">
+							<img src="img/workflow/illustration@2x.jpg" style="width: 700px;" alt="From idea to app store in a few simple steps">
+						</div>
+
+
+						
+						<div class="col-sm-1">
+							<!-- emtpy - only for spacing --> 
+						</div>
+	
+					</div>
+				</div>
+			</section>
+
+
+
+
 			<!-- SERVICES
 			============================================= -->	
-			<section id="services" style="background-color: #f5f5f5;">
+			<section id="services" class="background-semibright">
 				<div class="container">
 
 					<div class="row">
@@ -248,15 +279,15 @@
 					<div class="row" style="margin-bottom:40px;">
 						<div class="col-md-4 service-box">
 							<h4>Version Control</h4>
-							<ul class="list"><li>Fully integrated with Git</li><li>Versioning for visual assets</li><li>Easily undo changes and releases</li></ul>
+							<ul class="ticklist"><li>Fully integrated with Git</li><li class="ticked">Versioning for visual assets</li><li>Easily undo changes and releases</li></ul>
 						</div>
 						<div class="col-md-4 service-box">
 							<h4>Scripting</h4>
-							<ul class="list"><li>Javascript or Typescript</li><li>Cloud-based code editor, or work locally</li><li>Create extensions for the visual editor</li><li>Experiment with our Scripting API</li></ul>
+							<ul class="ticklist"><li>Javascript or Typescript</li><li>Cloud-based code editor, or work locally</li><li>Create extensions for the visual editor</li><li>Experiment with our Scripting API</li></ul>
 						</div>							
 						<div class="col-md-4 service-box">
 							<h4>Deployment</h4>
-							<ul class="list"><li>Run locally or in the cloud</li><li>Easily test your code</li><li>Deploy to iOS, Android and the web</li></ul>
+							<ul class="ticklist"><li>Run locally or in the cloud</li><li>Easily test your code</li><li>Deploy to iOS, Android and the web</li></ul>
 						</div>
 					</div>
 
@@ -265,15 +296,15 @@
 					<div class="row" style="margin-bottom:40px;">
 						<div class="col-md-4 service-box">
 							<h4>Animations</h4>
-							<ul class="list"><li>60 fps</li><li>Retargetable Animations</li><li>Event calling from within the animation</li><li>Physics based animations</li><li>Sophisticated animation controllers</li></ul>
+							<ul class="ticklist"><li>60 fps</li><li>Retargetable Animations</li><li>Event calling from within the animation</li><li>Physics based animations</li><li>Sophisticated animation controllers</li></ul>
 						</div>
 						<div class="col-md-4 service-box">
 							<h4>Scripting</h4>
-							<ul class="list"><li>Javascript or Typescript</li><li>Cloud-based code editor, or work locally</li><li>Create extensions for the visual editor</li><li>Experiment with our Scripting API</li></ul>
+							<ul class="ticklist"><li>Javascript or Typescript</li><li>Cloud-based code editor, or work locally</li><li>Create extensions for the visual editor</li><li>Experiment with our Scripting API</li></ul>
 						</div>							
 						<div class="col-md-4 service-box">
 							<h4>Deployment</h4>
-							<ul class="list"><li>Run locally or in the cloud</li><li>Easily test your code</li><li>Deploy to iOS, Android and the web</li></ul>
+							<ul class="ticklist"><li>Run locally or in the cloud</li><li>Easily test your code</li><li>Deploy to iOS, Android and the web</li></ul>
 						</div>
 					</div>
 	
@@ -283,113 +314,6 @@
 			
 
 
-
-			<!-- ABOUT-1
-			============================================= -->
-			<section id="about">
-				<div class="container">
-				
-			
-					<!-- ACCORDION HOLDER -->	
-					<div id="accordion-holder" class="row">
-					
-					
-						<!-- ACCORDION HOLDER IMAGE -->	
-						<div class="col-md-6 text-center animated" data-animation="fadeInLeft" data-animation-delay="600">
-							<img class="img-responsive" src="img/thumbs/tablet.png" alt="our-philosophy-image" />
-						</div>		
-							
-					
-						<!--  ACCORDION -->
-						<div class="col-md-6">											
-							<div class="panel-group" id="accordion">
-							
-								
-								<!-- PANEL #1 -->
-								<div class="panel panel-default animated" data-animation="fadeInRight" data-animation-delay="300">
-
-									<!-- Panel Title -->
-									<div class="panel-heading">
-										<h5 class="panel-title"><a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#collapseOne"><i class="fa fa-check"></i> 100% Responsive Layout </a> </h5>
-									</div>
-											
-									<!-- Panel Content -->
-									<div id="collapseOne" class="panel-collapse collapse in">
-										<div class="panel-body">
-											Get the best of both worlds with Unity: high-end tools in a ready-made solution that’s also intuitive to use and deeply customizable. Move into full production at an astonishing pace. Add your own tools to Unity for ultimate comfort and productivity. Dive into scripting with super fast compilation times.
-										</div>
-									</div>	
-											
-								</div>	<!-- END PANEL #1 -->
-										 
-										  
-								<!-- PANEL #2 -->
-								<div class="panel panel-default animated" data-animation="fadeInRight" data-animation-delay="500">
-										 
-									<!-- Panel Title -->
-									<div class="panel-heading">
-										<h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseTwo"><i class="fa fa-check"></i> Clean & Modern Design </a> </h4>
-									</div>
-											
-									<!-- Panel Title -->
-									<div id="collapseTwo" class="panel-collapse collapse">
-										<div class="panel-body"> 
-											Get the best of both worlds with Unity: high-end tools in a ready-made solution that’s also intuitive to use and deeply customizable. Move into full production at an astonishing pace. Add your own tools to Unity for ultimate comfort and productivity. Dive into scripting with super fast compilation times.
-										</div>
-									</div>
-											
-								</div>	<!-- END PANEL #2 -->
-										 
-										 
-								<!-- PANEL #3 -->
-								<div class="panel panel-default animated" data-animation="fadeInRight" data-animation-delay="700">
-										 
-									<!-- Panel Title -->
-									<div class="panel-heading">
-										<h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseThree"><i class="fa fa-check"></i> Detailed Documentation</a> </h4>
-									</div>
-											
-									<!-- Panel Title -->
-									<div id="collapseThree" class="panel-collapse collapse">
-										<div class="panel-body">
-											Aenean blandit non nulla at sodales. Sed ut nisi eu dui accumsan mollis in ac velit. Quisque erat diam, sodales vitae arcu ac, consequat consequat nibh.
-											Donec vel sapien augue. Integer rhoncus urna vel turpis cursus odio. Integer mattis elit eleifend purus tincidunt tempor. Integer sed luctus est. Nam cursus turpis nec velit sodales, eget vestibulum
-										</div>
-									</div>
-																				
-								</div>	<!-- END PANEL #3 -->
-									
-									
-								<!-- PANEL #4 -->
-								<div class="panel panel-default animated" data-animation="fadeInRight" data-animation-delay="900">
-										 
-									<!-- Panel Title -->
-									<div class="panel-heading">
-										<h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseFour"><i class="fa fa-check"></i> Free Premium Support </a> </h4>
-									</div>
-											
-									<!-- Panel Title -->
-									<div id="collapseFour" class="panel-collapse collapse">
-										<div class="panel-body">
-											Aenean blandit non nulla at sodales. Sed ut nisi eu dui accumsan mollis in ac velit. Quisque erat diam, sodales vitae arcu ac, consequat consequat nibh.
-											Donec vel sapien augue. Integer rhoncus urna vel turpis cursusPhasellus porta, mauris sed molestie cursus, quam odio sagittis nibh, consequat dapibus justo eros a erat. 
-											Phasellus interdum nisl a ligula feugiat, a malesuada metus dictum
-										</div>
-									</div>
-																				
-								</div>	<!-- END PANEL #4 -->
-								
-										  
-							</div>
-						</div>	<!--  END ACCORDION -->
-						
-					
-					</div>	<!-- END ACCORDION HOLDER -->	
-					
-
-				</div>	  <!-- End container -->
-			</section>	<!-- END ABOUT-1 -->
-			
 
 			
 			<!-- FEATURES
@@ -401,7 +325,7 @@
 					<!-- SECTION TITLE -->				
 					<div class="row">
 						<div class="col-sm-12 titlebar">
-							<h3>Our Features</h3>
+							<h3>A uniquely <b>extendable tool</b></h3>
 							<h2>How we do it</h2>			
 						</div>
 					</div>
@@ -943,7 +867,7 @@
 
 						<!-- TESTIMONIAL #1 -->
 						<div class="col-sm-4">					
-							<div class="testimonial text-center animated" data-animation="fadeInUp" data-animation-delay="500">
+							<div class="testimonial text-center animated" data-animation="fadeInUp" data-animation-delay="200">
 							
 								<!-- Testimonial Message -->
 								<div class="testi-content">
@@ -968,7 +892,7 @@
 						
 						<!-- TESTIMONIAL #2 -->
 						<div class="col-sm-4">					
-							<div class="testimonial text-center animated" data-animation="fadeInUp" data-animation-delay="600">
+							<div class="testimonial text-center animated" data-animation="fadeInUp" data-animation-delay="400">
 							
 								<!-- Testimonial Message -->
 								<div class="testi-content">
@@ -992,7 +916,7 @@
 						
 						<!-- TESTIMONIAL #3 -->
 						<div class="col-sm-4">					
-							<div class="testimonial text-center animated" data-animation="fadeInUp" data-animation-delay="800">
+							<div class="testimonial text-center animated" data-animation="fadeInUp" data-animation-delay="600">
 							
 								<!-- Testimonial Message -->
 								<div class="testi-content">
