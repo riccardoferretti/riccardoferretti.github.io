@@ -11,8 +11,8 @@
 		<meta charset="utf-8">
 		<title>Momentumworks</title>
 		<meta name="author" content="Malte Nuhn">
-		<meta name="keywords" content="app design, UI, interface, UX, app, mobile app, mobile, iPad, iPhone, Android, interaction, interaction design">
-		<meta name="description" content="Momentumworks - The Creative Platform for Interface Design">		
+		<meta name="keywords" content="app design, UI, interface, UX, app, mobile app, mobile, iPad, iPhone, Android, interaction, interaction design, Processing, Canvas, Canvas Animation">
+		<meta name="description" content="Momentumworks - The Creative Platform for Building Interfaces">		
 		
 		<!-- Mobile Specific Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
@@ -51,7 +51,7 @@
 		<header id="header">		
 			<div class="navbar navbar-fixed-top">	
 				<div class="container">
-				
+		
 					
 					<!-- Navigation Bar -->
 					<div class="navbar-header">
@@ -105,14 +105,17 @@
 								
 						<!-- INTRO SLIDER -->
 						<div class="row">											
-							<div class="col-xs-12 col-sm-11 col-lg-8">
+							<div class="col-xs-12 col-sm-11 col-lg-9">
 								<div class="intro_head">
-									<h2>Build your idea <br>with Momentumworks</h2>
-									<p>Unity is a flexible and powerful development platform for creating multiplatform 3D and 2D games and interactive experiences. It's a complete ecosystem for anyone who aims to build a business on creating high-end content and connecting to their most loyal and enthusiastic players and customers.</p>																		
+									<h2>Build interfaces that rock!</h2>
+									<p>Momentumworks is a creative platform for designing and building multiplatform applications and interfaces.  It’s a complete system that brings together layout, interaction design, and development – so you can focus on building great products.</p>
 									<!-- INTRO BUTTONS -->
 									<div class="intro_buttons">
-										<a class="btn btn-theme btn-large btn-primary" href="#">Find out more</a>
-										<a class="btn btn-theme btn-large btn-secondary" href="#">Get Started</a>
+										<a class="btn btn-theme btn-large btn-primary" href="#">Sign up for early access</a>
+										<!-- <a class="btn btn-theme btn-large btn-secondary" href="#">Get Started</a> -->
+
+
+
 									</div>			
 								</div>
 							</div>										
@@ -138,24 +141,17 @@
 				<div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=a9KZ3jgbbmI',containment:'#intro',startAt:10, mute:true, autoPlay:true, showControls:false}"></div>					
 
 				<!-- TODO swap out for the following (from Astropad)
-				<video class="player" loop="" preload="auto" autoplay="" id="the-video" class="video-playing" muted="muted" volume="0" poster="video/img/marquee-1.jpg">
-            			<source src="video/bg.mp4" type="video/mp4">
-            		<img src="assets /img/marquee-1.jpg" class="fullwidth">
-            	</video>
-
+					<video class="player" loop="" preload="auto" autoplay="" id="the-video" class="video-playing" muted="muted" volume="0" poster="video/img/marquee-1.jpg">
+	            			<source src="video/bg.mp4" type="video/mp4">
+	            		<img src="assets /img/marquee-1.jpg" class="fullwidth">
+	            	</video>
             	-->
-				
 			</div>
 			
 			
 
-			<!-- BENEFIT BEAUTIFUL INTERFACESround 
-					(1 column, 1 column with 6 boxes over two rows)
-					TODO
-					- maybe two rows are unnecessary and flexbox can just handle it
-					- this is not responsive right now
-					- needs to have a static image as background (what resolution?)
-					- once it looks and works ok, we need two more versions: one with white background and content, one with grey.
+			<!-- BENEFIT BEAUTIFUL INTERFACES
+					
 
 			============================================= -->
 			<section id="interfaces" class="background-dark">
@@ -163,7 +159,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-lg-4" style="align-items: center;display:flex; min-height: 500px;">
 							<div style="padding:2px 100px 20px;">
-								<h2>Create Beautiful, Interactive Interfaces</h2>
+								<h2>Realize your craziest ideas</h2>
 								<p>Our UI Studio gives you complete control over layout, style, behaviour, and animations.</p>
 							</div>
 						</div>
@@ -171,28 +167,29 @@
 						<div class="col-xs-12 col-lg-8">
 							<!-- all hail flexbox-->
 							<div class="row row-eq-height" style="min-height:320px;overflow:hidden;flex-flow: row wrap;justify-content: space-between;">
+
+								<div class="detailbox content-interactions">
+									<h5>Advanced Interactions</h5>
+								</div>
+
 								<div class="detailbox content-animations">
 									<h5>Rich Animations</h5>
+								</div>
+
+								<div class="detailbox content-layouts">
+									<h5>Powerful Layouts</h5>
+								</div>
+
+								<div class="detailbox content-physics">
+									<h5>Interface Physics</h5>
 								</div>
 								
 								<div class="detailbox content-positioning">
 									<h5>Responsive Positioning</h5>
 								</div>
 
-								<div class="detailbox content-interactions">
-									<h5>Advanced Interactions</h5>
-								</div>
-
-								<div class="detailbox">
-									<h5>Powerful Layouts</h5>
-								</div>
-
-								<div class="detailbox">
-									<h5>Interface Physics</h5>
-								</div>
-
-								<div class="detailbox">
-									<h5>Rich Animations</h5>
+								<div class="detailbox content-acceleration">
+									<h5>Hardware Acceleration</h5>
 								</div>
 							</div>
 
@@ -210,16 +207,23 @@
 				<div class="container-fluid"> <!-- fluid for full-width -->
 					<div class="row">
 						<div class="col-sm-7" style="align-items: center;display:flex; min-height: 500px;justify-content: center;">
-							<img src="img/workflow/illustration@2x.jpg" style="width: 700px;" alt="From idea to app store in a few simple steps">
+							<img src="http://placehold.it/700x240" style="width: 700px;" alt="From idea to app store in a few simple steps">
 						</div>
 
 
 						<!-- end  big (8) column -->
 						<div class="col-sm-4 titlebar" style="align-items: center;display:flex; min-height: 500px;">
-							<div style="">
+							<div>
 								<h2><span class="text-light">Move fast </span> and build things</h2>
 								<p>Go from prototype to real product 10x faster. Draw the interface, drag and drop data connections,  add custom Superpowers™ for advanced capabilities, and easily integrate with common APIs and back-ends.</p>
 								<p>When you’re finished, get your project into the app store, or add the interface to an Xcode project.</p>
+								<p>
+
+									<img src="http://placehold.it/120x50?text=120x50+meteor"/>
+									<img src="http://placehold.it/120x50?text=parse"/>
+									<img src="http://placehold.it/120x50?text=firebase"/>
+								</p>
+								<a class="btn btn-theme btn-subdued" href="#">Find out more</a>
 							</div>
 						</div>
 						<div class="col-sm-1">
@@ -229,44 +233,161 @@
 					</div>
 				</div>
 			</section>
+
+
+
+
+
+
+
+
+			<!-- COLLABORATE
+			============================================= -->
+			<section id="collaborate">
+        		
+				<div class="overlay">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-3 col-sm-1 col-xs-0"></div>
+							<div class="col-lg-6 col-sm-10 col-xs-12 titlebar text-center mt-80 mb-80" >
+								<h1>Work better, together</h1>
+								<p>Momentumworks lets teams collaborate in whole new ways. Edit designs simultaneously (like in Google Docs!), put placeholder functions, leave comments on the UI, and track revisions in the UI and business logic. </p>
+							</div>			
+							<div class="col-lg-3 col-sm-1 col-xs-0"></div>
+						</div>
+					</div>			<!-- End container -->
+				</div>			<!-- End overlay-->
+			</section>	<!-- END INTRO -->
+
+
+
 
 			<!-- BENEFIT INNOVATE
 			============================================= -->
 			<section id="innovate">
-				<div class="container-fluid"> <!-- fluid for full-width -->
+				<div class="container">
 					<div class="row">
 						
-						<div class="col-sm-1"></div>
+						
 						<div class="col-sm-4 titlebar" style="align-items: center;display:flex; min-height: 500px;">
 							<div style="">
-								<h2>Build the interfaces of the future</h2>
+								<h2><span class="text-light text-highlight">Build the</span> interfaces of the future</h2>
+								<p>Go from prototype to real product 10x faster. Draw the interface, drag and drop data connections,  add custom Superpowers™ for advanced capabilities, and easily integrate with common APIs and back-ends.</p>
+								<p>When you’re finished, get your project into the app store, or add the interface to an Xcode project.</p>
+							</div>
+						</div>
+						<div class="col-sm-1"><!-- emtpy - only for spacing --></div>
+						<div class="col-sm-7" style="align-items: center;display:flex; min-height: 500px;justify-content: center;">
+							<img src="http://placehold.it/700x500" style="width: 700px;" alt="From idea to app store in a few simple steps">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-7" style="align-items: center;display:flex; min-height: 500px;justify-content: center;">
+							<img src="http://placehold.it/700x240" style="width: 700px;" alt="From idea to app store in a few simple steps">
+						</div>
+						<div class="col-sm-1"><!-- emtpy - only for spacing --></div>
+						<div class="col-sm-4 titlebar" style="align-items: center;display:flex; min-height: 500px;">
+							<div>
+								<h2><span class="text-light text-highlight">Build the</span> interfaces of the future</h2>
 								<p>Go from prototype to real product 10x faster. Draw the interface, drag and drop data connections,  add custom Superpowers™ for advanced capabilities, and easily integrate with common APIs and back-ends.</p>
 								<p>When you’re finished, get your project into the app store, or add the interface to an Xcode project.</p>
 							</div>
 						</div>
 
-						<div class="col-sm-7" style="align-items: center;display:flex; min-height: 500px;justify-content: center;">
-							<img src="img/workflow/illustration@2x.jpg" style="width: 700px;" alt="From idea to app store in a few simple steps">
-						</div>
-
-
-						
-						<div class="col-sm-1">
-							<!-- emtpy - only for spacing --> 
-						</div>
 	
 					</div>
+
+
+
+
 				</div>
 			</section>
 
+			<!-- HIRING
+			==============================================
+			-->
 
 
 
-			<!-- SERVICES
+
+			<section id="hiring" class="background-semibright vspacer-xl" >
+
+			<div class="container-fluid background-highlight pt-80 pb-30">
+				<div class="row">
+					<div class="col-md-12 titlebar text-center">
+						<h2>Join our world-class team</h2>
+						<p>Building the future of interface development isn't easy, but it sure is a lot of fun.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container pt-80">
+
+				<div class="row">
+
+					<div class="module-card-wrap">
+					  <!-- card -->
+
+					  <div class="module-card">
+					    <div class="module-card-top">
+					      <img src="http://placehold.it/600x400" class="module-card-img" />
+					      <div class="module-card-bottom">
+					      	<p>&nbsp;</p>
+					        <h5>Software Engineer</h5>
+					        <p>...like building a compiler, but more fun</p>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- card -->
+					  <div class="module-card">
+					    <div class="module-card-top">
+					      <img src="http://placehold.it/600x400" class="module-card-img" />
+					      <div class="module-card-bottom">
+					      	<p>&nbsp;</p>
+					        <h5>Creative Front-End Engineer</h5>
+					        <p>Push JS and Canvas to their limits.</p>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- card -->
+					  <div class="module-card">
+					    <div class="module-card-top">
+					      <img src="http://placehold.it/600x400" class="module-card-img" />
+					      <div class="module-card-bottom">
+					      	<p>&nbsp;</p>
+					        <h5>Design Lead</h5>
+					        <p>Metadesign.</p>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- card -->
+					  <div class="module-card">
+					    <div class="module-card-top">
+					      <img src="http://placehold.it/600x400" class="module-card-img" />
+					      <div class="module-card-bottom">
+					      	<p>&nbsp;</p>
+					        <h5>Community Manager</h5>
+					        <p>UI Party :)</p>
+					      </div>
+					    </div>
+					  </div>
+
+
+					</div> <!-- end module-card-wrap -->
+				</div> <!-- end row -->
+
+			</div>	
+			</section>
+
+
+			<!-- DEV FEATURES
 			============================================= -->	
-			<section id="services" class="background-semibright">
+			<section id="engfeatures" class="mt-80 mb-80">
 				<div class="container">
-
 					<div class="row">
 						<div class="col-md-12 titlebar">
 							<h2>What's in the box</h2>
@@ -288,6 +409,7 @@
 						<div class="col-md-4 service-box">
 							<h4>Deployment</h4>
 							<ul class="ticklist"><li>Run locally or in the cloud</li><li>Easily test your code</li><li>Deploy to iOS, Android and the web</li></ul>
+							<br><a class="btn btn-theme btn-subtle" href="#">Find out more</a>
 						</div>
 					</div>
 
@@ -310,175 +432,7 @@
 	
 				</div>		<!-- End container -->
 			</section>	<!-- END SERVICES -->
-			
-			
 
-
-
-			
-			<!-- FEATURES
-			============================================= -->
-			<section id="features">
-				<div class="container">	
-				
-				
-					<!-- SECTION TITLE -->				
-					<div class="row">
-						<div class="col-sm-12 titlebar">
-							<h3>A uniquely <b>extendable tool</b></h3>
-							<h2>How we do it</h2>			
-						</div>
-					</div>
-					
-					
-					<div class="row">
-					
-								
-						<!-- FEATURE BOX -->
-						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
-							<div class="features-box">
-							
-								<!-- Feature Icon -->
-								<div class="icon-box img-circle">
-									<i class="fa fa-flask"></i>
-								</div>
-								
-								<!-- Feature Box Text -->
-								<div class="features-text">
-									<h4>Responsive Design</h4>
-									<p>Get the best of both worlds with Unity: high-end tools in a ready-made solution that’s also intuitive to use and deeply customizable. Move into full production at an astonishing pace. Add your own tools to Unity for ultimate comfort and productivity. Dive into scripting with super fast compilation times.
-									</p>
-								</div>
-								
-							</div>
-						</div>	<!-- END FEATURE BOX -->	
-						
-						
-						<!-- FEATURE BOX -->
-						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="300">
-							<div class="features-box">
-							
-								<!-- Feature Icon -->
-								<div class="icon-box img-circle">
-									<i class="fa fa-cogs"></i>
-								</div>
-								
-								<!-- Feature Box Text -->
-								<div class="features-text">
-									<h4>Powerful Options</h4>
-									<p>Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam vitae. 
-									   Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper ullamcorper placerat
-									</p>
-								</div>
-								
-							</div>
-						</div>	<!-- END FEATURE BOX -->
-						
-						
-					</div>	<!-- End row -->
-					
-						
-					<div class="row">	
-					
-						
-						<!-- FEATURE BOX -->
-						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="500">
-							<div class="features-box">
-							
-								<!-- Feature Icon -->
-								<div class="icon-box img-circle">
-									<i class="fa fa-bars"></i>
-								</div>
-								
-								<!-- Feature Box Text -->
-								<div class="features-text">
-								    <h4>Bootstrap Grid</h4>
-									<p>Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam vitae. 
-									   Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper ullamcorper placerat
-									</p>
-								</div>
-								
-							</div>
-						</div>	<!-- END FEATURE BOX -->
-						
-						
-						<!-- FEATURE BOX -->
-						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="500">
-							<div class="features-box">
-							
-								<!-- Feature Icon -->
-								<div class="icon-box img-circle">
-									<i class="fa fa-trophy"></i>
-								</div>
-								
-								<!-- Feature Box Text -->
-								<div class="features-text">
-									<h4>jQuery Effects</h4>
-									<p>Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam vitae. 
-									   Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper ullamcorper placerat
-									</p>
-								</div>
-								
-							</div>
-						</div>	<!-- END FEATURE BOX -->
-						
-					
-					</div>	<!-- End row -->
-					
-						
-					<div class="row">	
-						
-						
-						<!-- FEATURE BOX -->
-						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="700">
-							<div class="features-box">
-							
-								<!-- Feature Icon -->
-								<div class="icon-box img-circle">
-									<i class="fa fa-wrench"></i>
-								</div>
-								
-								<!-- Feature Box Text -->
-								<div class="features-text">
-									<h4>Easy to Modify</h4>
-									<p>Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam vitae. 
-									   Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper ullamcorper placerat
-									</p>
-								</div>
-								
-							</div>
-						</div>	<!-- END FEATURE BOX -->
-						
-						
-						<!-- FEATURE BOX -->
-						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="700">
-							<div class="features-box">
-							
-								<!-- Feature Icon -->
-								<div class="icon-box">
-									<i class="fa fa-life-ring"></i>
-								</div>
-								
-								<!-- Feature Box Text -->
-								<div class="features-text">
-									<h4>Premium Support</h4>
-									<p>Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam vitae. 
-									   Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper ullamcorper placerat
-									</p>
-								</div>
-								
-							</div>
-						</div>	<!-- END FEATURE BOX -->
-						
-									
-					</div>	<!-- End row -->
-
-					
-				</div><!-- End container -->
-			</section>	<!-- END FEATURES -->
-
-
-			
 			
 			<!-- LATEST WORKS
 			============================================= -->
@@ -696,156 +650,7 @@
 					
 			</section>	   <!-- END LATEST WORKS -->
 
-
-			
-			<!-- PRICING
-			============================================= -->	
-			<section id="pricing">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->		
-					<div class="row">
-						<div class="col-sm-12 titlebar">
-							<h3>Our pricing</h3>
-						</div>
-					</div>	
-					
-					
-					<!-- PRICING TABLE HOLDER -->	
-					<div class="row price-row">
-					
-					
-						<!-- PRICE PLAN BASIC -->
-						<div id="price_1" class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight" data-animation-delay="400">
-							<div class="pricing-table text-center">		
-						
-								<!-- Table Header  -->
-								<h3>Basic</h3>
-
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span class="color">39</span>
-									<sup class="color">99</sup>
-								</div>
-															
-								<!-- Plan Features  -->
-								<ul class="features">
-									<li>Up to <strong>5 Projects</strong></li>
-									<li><strong>5 GB</strong> of Storage</li>
-									<li>Up to <strong>100 Users</strong></li>
-									<li><strong>10 GB</strong> Bandwidth</li>
-									<li><strong>Security Suite</strong></li>
-								</ul>
-								
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-theme">Select Plan</a>
-
-							</div>
-						</div>	<!-- END PRICE PLAN BASIC -->
-						
-
-						<!-- PRICE PLAN STANDARD -->
-						<div id="price_2" class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft" data-animation-delay="400">
-							<div class="pricing-table text-center">		
-								
-								<!-- Table Header  -->
-								<h3>Standard</h3>
-
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span class="color">59</span>
-									<sup class="color">99</sup>
-								</div>
-																	
-								<!-- Plan Features  -->
-								<ul class="features">
-									<li>Up to <strong>10 Projects</strong></li>
-									<li><strong>10 GB</strong> of Storage</li>
-									<li>Up to <strong>250 Users</strong></li>
-									<li><strong>25 GB</strong> Bandwidth</li>
-									<li><strong>Security Suite</strong></li>
-								</ul>
-										
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-theme">Select Plan</a>
-
-							</div>
-						</div>	<!-- END PRICE PLAN STANDARD -->
-						
-						
-						<!-- PRICE PLAN ADVANCED -->
-						<div id="price_3" class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight" data-animation-delay="600">	
-							<div class="pricing-table text-center highlight">		
-								
-								<!-- Table Header  -->
-								<h3>Advanced</h3>
-								<div class="down-arrow"></div>
-
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span class="color">99</span>
-									<sup class="color">99</sup>
-								</div>
-																	
-								<!-- Plan Features  -->
-								<ul class="features">
-									<li><strong>Unlimited Projects</strong></li>
-									<li><strong>50 GB</strong> of Storage</li>
-									<li>Up to <strong>1000 Users</strong></li>
-									<li><strong>100 GB</strong> Bandwidth</li>
-									<li><strong>Security Suite</strong></li>
-								</ul>
-										
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-theme">Select Plan</a>
-
-							</div>
-						</div>	<!-- END PRICE PLAN ADVANCED -->
-						
-						
-						<!-- PRICE PLAN ULTIMATE -->
-						<div id="price_4" class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft" data-animation-delay="600">
-							<div class="pricing-table text-center">		
-								
-								<!-- Table Header  -->
-								<h3>Basic</h3>
-
-								<!-- Plan Price  -->
-								<div class="price">
-									<sup>$</sup>
-									<span class="color">129</span>
-									<sup class="color">99</sup>
-								</div>
-																	
-								<!-- Plan Features  -->
-								<ul class="features">
-								    <li><strong>Unlimited Projects</strong></li>
-								    <li><strong>150 GB</strong> of Storage</li>
-									<li><strong>Unlimited</strong></li>
-									<li><strong>500 GB</strong> Bandwidth</li>
-									<li><strong>Security Suite</strong></li>
-								</ul>
-										
-								<!-- Table Button  -->
-								<a href="#" class="btn btn-theme">Select Plan</a>
-
-							</div>
-						</div>	<!-- END PRICE PLAN ULTIMATE -->
 		
-
-					</div>	<!-- End row -->
-					
-					
-				</div>	<!-- End container -->	
-			</section>	 <!-- END PRICING -->
-			
-			
-	
-			
 			
 			<!-- TESTIMONIALS
 			============================================= -->
@@ -871,7 +676,7 @@
 							
 								<!-- Testimonial Message -->
 								<div class="testi-content">
-									<p>Maecenas laoreet augue egestas volutpat vulputate fermentum suscipit egestas lobortis magna, sit amet fermentum nisl condimentum mauris nec interdum lectus</p>
+									<p>A remarkably different way of building things</p>
 									<div class="testi-arrow"></div>
 								</div>
 								
@@ -959,7 +764,7 @@
 						<div class="col-md-12 text-center">
 							
 							<h3>Subscribe to our newsletter</h3>	
-							<p>We send you in-depth UI reviews, and new product announcements. Weekly only, no spam or clickthrough.</p>
+							<p>We send you in-depth UI reviews, cool UI articles we found. It's the same we send to our team. No clickbait, no ads, full text if we can.</p>
 									
 							<form id="newsletter_form" method="post" action="subscribe.php">
 								<div id="newsletterfields">
@@ -978,7 +783,7 @@
 					<!-- FOOTER COPYRIGHT -->
 					<div class="row">						
 						<div id="footer_copyright" class="col-sm-12 text-center">		
-							<p>Copyright 2016 <span>Momentumworks Inc</span>. All Rights Reserved.</p>	
+							<p>Copyright 2015 <span>Momentumworks Inc</span>. All Rights Reserved.</p>	
 						</div>
 					</div>
 					
@@ -990,12 +795,13 @@
 							
 							<div id="contact_icons">																	
 								<ul class="contact-socials clearfix">
+								<!--
 									<li><a class="foo_social ico-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
 									<li><a class="foo_social ico-twitter" href="#"><i class="fa fa-twitter"></i></a></li>	
 									<li><a class="foo_social ico-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
 									<li><a class="foo_social ico-behance" href="#"><i class="fa fa-behance"></i></a></li>																								
 																									
-								<!--
+								
 									<li><a class="foo_social ico-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>									
 									<li><a class="foo_social ico-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>		
 									<li><a class="foo_social ico-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>

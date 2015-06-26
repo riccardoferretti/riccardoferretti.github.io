@@ -22,13 +22,6 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
 /*   05 - About-1	      		   */
 /*   06 - Skills				   */
 /*   07 - Services         		   */
-/*   08 - Features            	   */
-/*   09 - History				   */
-/*   10 - Statistic banner         */
-/*   11 - Portfolio        		   */
-/*   12 - Team					   */
-/*   13 - Pricing				   */
-/*   14 - Clients		 	  	   */
 /*   15 - Testimonials	      	   */
 /*   16 - Blog		 	  	   	   */
 /*   17 - Promo LIne	 	  	   */
@@ -69,6 +62,67 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
 
 }
 
+/* cards for card-based layouts */
+
+	.module-card-wrap {
+	  max-width: 100%;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  margin: 0 auto;
+	}
+
+	.module-card-bottom {
+	  padding: 10px 15px 5px;
+	  text-align: center;
+	}
+
+	.module-card-bottom p {
+		font-size: .9em;
+	}
+
+	.module-card {
+	  background: #fff;
+	  border: 1px solid #f1f1f1;
+	  min-width: 100%;
+	  margin-bottom: 5%;
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.module-card-bottom h4, .module-card-bottom h5  {
+		text-transform: none;
+		font-weight: 600;
+	}
+
+	.module-card-img {
+	  align-self: center;
+	  width: 100%;
+	  height: auto;
+	  margin: 0;
+	}
+
+
+	@media screen and (min-width: 768px) {
+	  .module-card {
+	    width: 33%;
+	    min-width: 0;
+	  }
+	}
+
+	@media screen and (min-width: 992px) {
+	  .module-card {
+	    width: 23%;
+	    min-width: 0;
+	  }
+	}
+
+
+
+
+
+
+
 
 /* ==========================================================================
    01. GENERAL & BASIC STYLES
@@ -93,6 +147,10 @@ Tags: responsive, premium template, html5 template, one page, landing page, busi
 
 body {
 	font-weight: 300;
+}
+::selection{
+	background-color: rgba(255,60,92,.9);
+	color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -126,6 +184,17 @@ p, li, a {
 
 .text-light {
 	font-weight: 300;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+.background-highlight {
+	/* light green colour; dark text */
+	background-color: #35DE9A;
+	color: #353647;
 }
 
 .background-semibright {
@@ -191,6 +260,31 @@ a:focus {
 	text-decoration: none;
 } 
 
+.vspacer-xl {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/* spacing shortcuts */
+.mt-80 { margin-top: 80px;}
+.mt-30 { margin-top: 30px; }
+.mt-15 { margin-top: 15px; }
+
+.mb-80 { margin-bottom: 80px;}
+.mb-30 { margin-bottom: 30px; }
+.mb-15 { margin-bottom: 15px; }
+
+.pt-80 { padding-top: 80px;}
+.pt-30 { padding-top: 30px; }
+.pt-15 { padding-top: 15px; }
+
+.pb-80 { padding-bottom: 80px;}
+.pb-30 { padding-bottom: 30px; }
+.pb-15 { padding-bottom: 15px; }
+
+
+
 /*------------------------------------------*/
 /*	 Theme Button
 /*------------------------------------------*/
@@ -231,6 +325,16 @@ a:focus {
 .btn-secondary, .btn-secondary:hover {
 	/* purple */
 	background-color: #5A57FF;
+	color: white;
+}
+
+.btn-subdued, .btn-subdued:hover {
+	background-color: #6F758B;
+	color: white;
+}
+
+.btn-subtle, .btn-subtle:hover {
+	background-color: #BFC4D1;
 	color: white;
 }
 
@@ -282,8 +386,13 @@ a:focus {
 /*------------------------------------------*/
 
 .navbar-brand {
-	padding: 18px 15px;
-}  
+	padding: 18px 18px;
+} 
+
+.navbar-brand:hover {
+	
+	transform: perspective(800px) rotateZ(0deg) rotateX(0deg) rotateY(90deg);
+}
      
 /*------------------------------------------*/
 /*	 Navigation Menu    
@@ -295,11 +404,11 @@ a:focus {
     -moz-border-radius: 0;
     border-radius: 0;
 	padding: 8px 0px;
-	-webkit-transition: all 150ms ease-in-out;
-	-moz-transition: all 150ms ease-in-out;
-	-o-transition: all 150ms ease-in-out;
-	-ms-transition: all 150ms ease-in-out;
-	transition: all 150ms ease-in-out;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 
@@ -313,11 +422,11 @@ a:focus {
 	text-transform: uppercase;
 	display: block;
 	padding: 0 15px;
-	-webkit-transition: all 100ms ease-in-out;
-	-moz-transition: all 100ms ease-in-out;
-	-o-transition: all 100ms ease-in-out;
-	-ms-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 /*------------------------------------------*/
@@ -325,12 +434,11 @@ a:focus {
 /*------------------------------------------*/
 
 .scroll-fixed-navbar {
-	padding: 0;
+	transform: perspective(1500px) rotateZ(0deg) rotateX(90deg) rotateY(0deg);
+	opacity: 0;
 }
 
-.scroll-fixed-navbar.navbar-fixed-top { 
-	background-color: rgba(47,43,59,.95);
-}
+
 
 /*------------------------------------------*/
 /*	 Menu Hover
@@ -375,7 +483,7 @@ a:focus {
 #intro {
 	width: 100%;
 	position: relative;
-	background-image: url(../img/thumbs/intro_bkg2.jpg);
+	background-image: url(../img/thumbs/intro_bkg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;		
 	background-size: cover;
@@ -383,21 +491,21 @@ a:focus {
 }
 
 /*------------------------------------------*/
-/*	 Overlay Pattern  TODO re-enable for video
+/*	 Overlay Pattern
 /*------------------------------------------*/
-/*
+
 .overlay {
 	background-image: url(../img/thumbs/overlay.png);
 	background-color: rgba(0, 0, 0, 0.1); 
 	background-repeat: repeat;
 	height: 100%;
 }
-*/
+
 /*------------------------------------------*/
 /*	 INTRO SLIDER
 /*------------------------------------------*/
 
-.intro_head {height: 790px;}
+#intro .intro_head {height: 790px;}
 
 #intro h2 {	
 	font-size: 3em;
@@ -460,24 +568,50 @@ a:focus {
 
 /* TODO: pre-load the animated gifs and create rest of this section*/
 
-.content-animations 			{ background: url('../img/features/feature_animations_static.png');background-size: cover; background-repeat: no-repeat;}
+.content-animations 			{ background: url('http://placehold.it/350x350?text=350x350+cover');background-size: cover; background-repeat: no-repeat;}
 .content-animations:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
 
-.content-interactions 			{ background: url('../img/features/feature_interactions_static.png');background-size: cover; background-repeat: no-repeat;}
+.content-positioning 			{ background: url('http://placehold.it/350x350?text=350x350+cover');background-size: cover; background-repeat: no-repeat;}
+.content-positioning:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
+
+.content-interactions 			{ background: url('http://placehold.it/350x350?text=350x350+cover');background-size: cover; background-repeat: no-repeat;}
 .content-interactions:hover		{ background: url('../img/features/feature_interactions.gif');background-size: cover; background-repeat: no-repeat;}
 
+.content-layouts 			{ background: url('http://placehold.it/350x350?text=350x350+cover');background-size: cover; background-repeat: no-repeat;}
+.content-layouts:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
+
+.content-physics 			{ background: url('http://placehold.it/350x350?text=350x350+cover');background-size: cover; background-repeat: no-repeat;}
+.content-physics:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
+
+
+.content-animations 			{ background: url('http://placehold.it/350x350?text=350x350+cover');background-size: cover; background-repeat: no-repeat;}
+.content-animations:hover 		{ background: url('../img/features/feature_animations.gif');background-size: cover; background-repeat: no-repeat;}
+
+/* 
+
+
+
+/* ==========================================================================
+   07. COLLABORATE
+   ========================================================================== */
+
+#collaborate {
+	width: 100%;
+	position: relative;
+	background-image: url(../img/thumbs/intro_bkg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;		
+	background-size: cover;
+	color: #fff;
+}
 
 
 
 
 /* ==========================================================================
-   07. SERVICES
+   07. ENGFEATURES
    ========================================================================== */
 
-#services {
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
 
 /*------------------------------------------*/
 /*	  SERVICE IMAGE
@@ -525,98 +659,6 @@ a:focus {
 }
 
 
-
-/* ==========================================================================
-   08. FEATURES
-   ========================================================================== */
- 
-#features {
-	background-image: url(../img/parallax_bg/features.jpg); 
-	background-attachment: fixed !important;
-	background-repeat: repeat;
-	background-position: 0 0;
-	padding-top: 80px;
-	padding-bottom: 40px;
-	color: #fff;
-}
-
-/*------------------------------------------*/
-/*	  FEATURES TITLEBAR
-/*------------------------------------------*/
-
-#features .titlebar h3, #features .titlebar h2 { 
-	color: #fff;
-}
-
-/*------------------------------------------*/
-/*	  FEATURE BOX
-/*------------------------------------------*/
-
-.features-box {
-    margin-bottom: 40px;
-}
-
-/*------------------------------------------*/
-/*	  Feature Icon
-/*------------------------------------------*/
-
-.icon-box {
-    width: 70px;
-    height: 70px;
-    line-height: 70px !important;
-    text-align: center;
-    float: left;
-    font-size: 22px;
-    color: #fff;
-}
-
-.icon-box i {
-	color: #5A57FF;
-    font-size: 60px;
-	margin-top: 10px;
-}
-
-/*------------------------------------------*/
-/*	  Feature Text
-/*------------------------------------------*/
-
-.features-text {
-    overflow: hidden;
-    padding: 0px 0px 0px 30px;
-}
-
-.features-text h4 {
-	font-size: 20px;
-	font-weight: 400;
-}
-
-.features-text p {
-	color: #ddd;
-	font-size: 16px;
-    font-weight: 300;
-	line-height: 26px;
-	padding-right: 20px;
-}
-
-
-
-/* ==========================================================================
-   09. HISTORY
-   ========================================================================== */
-
-#history {
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
- 
-   
-/* ==========================================================================
-   11. LATEST WORKS
-   ========================================================================== */
-
-#portfolio {
-	padding-top: 80px;
-}
 
 /*------------------------------------------*/
 /*	   PORTFOLIO TITLEBAR
@@ -1052,7 +1094,7 @@ a:focus {
 
 
 /* ==========================================================================
-   15 TESTIMONIALS 
+   TESTIMONIALS 
    ========================================================================== */
 
 #testimonials {
@@ -1075,7 +1117,6 @@ a:focus {
 }
 
 #testimonials .clients-counter {
-	color:  #ffc400;
 	font-size: 30px;
 	font-weight: 700;
 }
@@ -1426,89 +1467,6 @@ a:focus {
 	color: #ddd;
 }
 
-/*------------------------------------------*/
-/*	  CONTACT FORM
-/*------------------------------------------*/
-
-#contact-form {
-	margin-top: 30px;
-}
-/*------------------------------------------*/
-/*	  Contact Form Input
-/*------------------------------------------*/
-
-#contact-form .form-control {
-	height: 50px;
-	background-color: rgba(30, 30, 30, 0.3);
-	font-size: 14px;
-	margin-bottom: 20px;
-	border: 1px solid #666;
-	box-shadow: 0 0 0 0;
-	-webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-	background-color: #f3f3f3;
-	color: #444;
-	font-size: 14px;
-	margin-bottom: 15px;
-	padding: 12px 0;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-	box-shadow: 0 0 0 0;
-}
-
-#contact-form textarea {
-	min-height: 200px;
-}
-
-/*------------------------------------------*/
-/*	  Contact Form Input Focus
-/*------------------------------------------*/
-
-.form-control:focus {
-    outline: 0px none;
-    box-shadow: none;
-}
-
-/*------------------------------------------*/
-/*	  Contact Form Submit Button
-/*------------------------------------------*/
-
-#form_btn {
-	margin-top: 20px;
-}
-
-#form_btn .btn-theme {
-	font-size: 16px;
-	font-weight: 700;
-	padding: 10px 20px;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-}
-
-/*------------------------------------------*/
-/*	  Contact Form Error Message 
-/*------------------------------------------*/
-
-.error {
-	color: red;
-	font-size: 13px;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-
 
 /* ==========================================================================
    21. FOOTER
@@ -1525,24 +1483,9 @@ a:focus {
 /*------------------------------------------*/
 
 #newsletter {
-	margin-bottom: 10px;	
+	color: white;
 }
 
-#newsletter h3 {
-	color: #ddd;
-	font-size: 22px;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	margin-bottom: 5px;
-}
-
-#newsletter p {
-	color: #ddd;
-	line-height: 26px;
-	font-weight: 300;
-	margin-bottom: 0;
-}
 
 .message {
 	font-size: 15px;
@@ -1570,12 +1513,26 @@ a:focus {
 	-moz-border-radius: 6px 0 0 6px;
 	-o-border-radius: 6px 0 0 6px;
 	border-radius: 6px 0 0 6px;
+
+
+}
+
+#newsletter form {
+	transition: all 2250ms cubic-bezier(0,.72,1,-0.22);
+	
+}
+#newsletter form:hover {
+	transform: scale(1.4);
+	transition: all 200ms ease-in-out;
+	
+	;
 }
 
 #newsletter form input[type="submit"] {
 	width: 25%;
-	background-color: #ffc400;
-	border: 1px solid #ffc400;
+	background-color: #35DE9A;
+	opacity: .85;
+	border: 1px solid #35DE9A;
 	color: #fff;
 	font-size: 16px;
     font-weight: 900;
@@ -1593,7 +1550,9 @@ a:focus {
 }
 
 #newsletter form input[type="submit"]:hover {
-	background-color: #d9a701;
+
+	opacity: 1;
+	
 }
 
 
@@ -1601,84 +1560,6 @@ a:focus {
 	color: #ddd;
 	line-height: 40px;
 }
-
-#footer_copyright p span {
-	color: #ffc400;
-	font-size: 15px;
-	font-weight: 800;
-}
-
-/*------------------------------------------*/
-/*	 Footer Social Icons  
-/*------------------------------------------*/
-
-.contact-socials {
-	display: inline-block; 
-	padding-left: 0;
-
-}
-
-.contact-socials li {
-	float: left;
-	width: auto !important;
-    display: inline-block !important;
-    vertical-align: top;
-    clear: none !important;
-	padding: 0;
-}
-
-/*------------------------------------------*/
-/*	 Footer Social Icon Setting 
-/*------------------------------------------*/
-
-.foo_social {
-	text-align: center;
-	color: #999;
-	width: 40px;
-	height: 40px;
-	font-size: 18px;
-    line-height: 40px;
-	margin: 0 5px;
-    display: block;
-    text-decoration: none;
-	-webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-}
-
-/*------------------------------------------*/
-/*	 Footer Social Icons Hover 
-/*------------------------------------------*/
-
-.foo_social.ico-facebook:hover {background-color: #3b5998; color: #fff;}
-.foo_social.ico-twitter:hover {background-color: #00a9ed; color: #fff;}
-.foo_social.ico-behance:hover {background-color: #00a8e7; color: #fff;}
-.foo_social.ico-google-plus:hover {background-color: #cd1111; color: #fff;}
-.foo_social.ico-linkedin:hover {background-color: #015886; color: #fff;}
-.foo_social.ico-dribbble:hover {background-color: #d92d84; color: #fff;}
-.foo_social.ico-instagram:hover {background-color: #beb3a8; color: #fff;}
-.foo_social.ico-pinterest:hover {background-color: #ac281a; color: #fff;}
-.foo_social.ico-dropbox:hover {background-color: #008ad2; color: #fff;}
-.foo_social.ico-skype:hover {background-color: #00a9ed; color: #fff;}
-.foo_social.ico-youtube:hover {background-color: #cd1b20; color: #fff;}
-.foo_social.ico-tumblr:hover {background-color: #3a5976; color: #fff;}
-.foo_social.ico-vimeo:hover {background-color: #00adee; color: #fff;}
-.foo_social.ico-flickr:hover {background-color: #d2d2d2; color: #fff;}
-.foo_social.ico-github:hover {background-color: #353647; color: #fff;}
-.foo_social.ico-renren:hover {background-color: #364a83; color: #fff;}
-.foo_social.ico-vk:hover {background-color: #3b5998; color: #fff;}
-.foo_social.ico-xing:hover  {background-color: #015f5e; color: #fff;}
-.foo_social.ico-weibo:hover  {background-color: #be4443; color: #fff;}
-.foo_social.ico-rss:hover{background-color: #ff6600; color: #fff;}
-.foo_social.ico-digg:hover  {background-color: #353647; color: #fff;}
-.foo_social.ico-deviantart:hover {background-color: #57675d; color: #fff;}
-.foo_social.ico-envelope:hover {background-color: #999; color: #fff;}
-.foo_social.ico-delicious:hover {background-color: #0A0A0A; color: #fff;}
 
 
 
@@ -1704,10 +1585,10 @@ a:focus {
 }
 
 #scrollUp:hover {
-	background-color:rgba(255, 60, 92, 1);
-	border-radius: 23px;
-	transform: rotate(360deg);
-	background-color:rgba(60, 255, 92, .85);
+	
+	
+	transform: perspective(40px) rotateY(0deg) rotateX(30deg) rotateZ(0deg);
+	background-color:#35DE9A;
 }
 
 nav a#pull {  
@@ -1743,7 +1624,7 @@ nav a#pull {
 }
 
 #form_response .btn-theme {
-	background-color: #ffc400;
+	
 	color: #333;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -1757,7 +1638,6 @@ nav a#pull {
 }
 
 #form_response .btn-theme:hover {
-	background-color: #ffc400;
 	color: #fff;
 }
 
