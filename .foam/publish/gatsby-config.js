@@ -1,14 +1,14 @@
 module.exports = {
-  pathPrefix: `/foam-gatsby-template`,
+  pathPrefix: `/`,
   siteMetadata: {
-    title: `Foam`,
+    title: `Primer`,
   },
   plugins: [
     {
       resolve: `gatsby-theme-garden`,
       options: {
         rootNote: "/readme",
-        contentPath: `${__dirname}/..`,
+        contentPath: `${__dirname}/../..`,
         ignore: [
           "**/_layouts/**",
           "**/.git/**",
