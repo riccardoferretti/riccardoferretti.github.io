@@ -1,42 +1,26 @@
-<img src="attachments/foam-icon.png" width="100" align="left"/>
+# DeFi Primer
 
-# Foam
+Start date: [[2021-03-29]]
+Goal: learn more about the latest in crypto, from DeFi to NFTs to how the space is evolving in general, even beyond finance.
 
-**👋 Welcome to your new Foam Knowledge Base!**
+I have decided to learn more about crypto in general, and DeFi specifically. And I have decided to experiment learning about it in public.
+There are a few goals I have set myself up for this project:
+- review what I already know about crypto (minor)
+- understand the major current developments in DeFi
+- create a mental model about where the space is headed
+- see in which other domains the innovations of DeFi will likely apply next, that is, to see how just as DeFi is addressing a lot of the wrong systems and incentives in finance, DeGov could do the same for politics and governments, of DeSoc to social networks, and so on...
 
-## Getting started
-
-This documentation assumes that you have a GitHub account and have [Visual Studio Code](https://code.visualstudio.com/) installed on your Linux/MacOS/Windows machine.
-
-1. If you haven't yet, browse over to the main [Foam documentation](https://foambubble.github.io/foam) to get an idea of what Foam is and how to use it.
-2. Press "Use this template" button at [foam-template](https://github.com/foambubble/foam-template/generate) (that's this repository!) to fork it to your own GitHub account. If you want to keep your thoughts to yourself, remember to set the repository private.
-3. [Clone the repository to your local machine](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and open it in VS Code.
-
-    *Open the repository as a folder using the `File > Open...` menu item.*
-
-4. When prompted to install recommended extensions, click **Install all** (or **Show Recommendations** if you want to review and install them one by one)
-
-After setting up the repository, head to [[getting-started]] to get familiar with your new knowledge base!
-
-To learn more about how to use **Foam**, read the [Recipes](https://foambubble.github.io/foam/recipes/recipes) bubbles of the Foam documentation workspace.
-
-And remember that you can always join our  [Foam community on Discord](https://foambubble.github.io/join-discord/g)!
-
-## Using Foam
-
-We've created a few Bubbles (markdown documents) to get you started.
-
-- [[inbox]] - a place to write down quick notes to be categorized later
-- [[getting-started]] - learn how to use your Foam workspace
-- [[todo]] - a place to keep track of things to do
-
-In the `docs` directory you can find everything you need to learn the basics of Foam.
+There are also some unrelated objectives I will be pursuing during this project:
+- learn in public
+- publish a digital garden on the topic
+- (bonus) join the 1729.com movement
 
 
+## My approach
 
+I have created a (private) blockchain centric list on my twitter, but as I feel I don't have enough context to understand some (most) of the things coming out of those twitter accounts, I get started by auditing some classes on Coursera:
 
-## Submitting Issues
+- https://www.coursera.org/specializations/blockchain-financial-services
+- https://www.coursera.org/learn/blockchain-opportunities-beyond-crypto-assets
+- https://www.coursera.org/learn/blockchain-business-models
 
-As you may have noticed, issues are disabled. With the goal to keep the project fairly easy to maintain, please file your issues in the main Foam repository:
-
-> <https://github.com/foambubble/foam>
