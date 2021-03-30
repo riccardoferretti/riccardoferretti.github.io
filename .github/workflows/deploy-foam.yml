@@ -9,10 +9,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
+      - name: Restore Dependencies and VS Code test instance
+        uses: actions/cache@v2
+        with:
+          path: |
+            .foam/publish/node_modules
+          key: ${{ hashFiles('**/yarn.lock') }}
 
-      - name: Install website dependencies
-        run: npm install
+      - name: Install dependencies
+        run: yarn
         working-directory: .foam/publish
+
       - name: Build website
         run: npm run build -- --prefix-paths
         working-directory: .foam/publish
