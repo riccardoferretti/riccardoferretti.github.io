@@ -18,5 +18,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-line-breaks`
+          },
+          {
+            resolve: `gatsby-remark-double-brackets-link`,
+            options: {
+              titleToURLPath: `${__dirname}/resolve-url.js`
+            },
+          },
+        ],
+      },
+    },
   ],
 };

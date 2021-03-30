@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "dependencies": {
     "gatsby": "^2.23.18",
+    "gatsby-remark-line-breaks": "^1.0.0",
     "gatsby-theme-garden": "^0.1.28",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
