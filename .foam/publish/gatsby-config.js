@@ -13,6 +13,7 @@ module.exports = {
           "**/_layouts/**",
           "**/.git/**",
           "**/.github/**",
+          "**/.foam/**",
           "**/.vscode/**",
         ],
       },
